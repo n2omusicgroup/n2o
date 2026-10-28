@@ -1,0 +1,157 @@
+/* Bebas Neue by Dharma Type, SIL Open Font License 1.1 (see assets/fonts/OFL.txt) */
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/bebas-neue.woff2") format("woff2");
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #9a9a9a;
+  --line: #2a2a2a;
+  --display: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+  --body: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 4px;
+}
+
+/* Hero */
+.hero {
+  min-height: 40vh;
+  min-height: 40svh;
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.hero__logo {
+  margin: 0;
+  width: min(360px, 70vw);
+}
+
+/* Sections */
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.section__title {
+  margin: 0 0 1.5rem;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.75rem, 9vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.prose p {
+  margin: 0 0 1.25rem;
+}
+
+.paths {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.paths li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--white);
+}
+
+.paths strong {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.prose .division {
+  margin: 2rem 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.email {
+  display: inline-block;
+  font-size: clamp(1.25rem, 5.5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  border-bottom: 2px solid var(--white);
+  overflow-wrap: anywhere;
+}
+
+.email:hover {
+  color: var(--grey);
+  border-color: var(--grey);
+}
+
+/* Footer */
+.footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.footer p {
+  margin: 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
