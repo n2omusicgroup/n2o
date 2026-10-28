@@ -52,8 +52,8 @@ a:focus-visible {
 
 /* Hero */
 .hero {
-  min-height: 85vh;
-  min-height: 85svh;
+  min-height: 40vh;
+  min-height: 40svh;
   display: grid;
   place-items: center;
   padding: 3rem 1.5rem;
